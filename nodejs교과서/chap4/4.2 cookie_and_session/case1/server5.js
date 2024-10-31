@@ -14,6 +14,7 @@ const parseCookies = (cookie ='') =>
     }, {});
 
 const session = {};
+
 http.createServer((req, res) => {
     const cookies = parseCookies(req.headers.cookie);
     if (req.url.startsWith('/login')) {
